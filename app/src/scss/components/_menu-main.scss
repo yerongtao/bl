@@ -1,0 +1,103 @@
+@charset "UTF-8";
+.menu-main {
+    //蓝色rgb:53,123,192 #357BC0
+    //灰色rgb:123,123,123 #7B7B7B
+    //原来的黑灰色rgba(51, 51, 51, 0.4);
+    background-color: rgba($color: #eee, $alpha: 0.8);
+    padding: 0.5rem;
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    z-index: 99;
+    li {
+        list-style-type: none;
+        text-align: center;
+        flex: 1;
+        i {
+            background: url(../images/menu.png) no-repeat;
+            background-size: 64px 256px;
+            width: 32px;
+            height: 32px;
+            display: block;
+            margin: 0 auto;
+        }
+        .icon-1 {
+            background-position: 0px -192px;
+        }
+        .icon-2 {
+            background-position: 0px -32px;
+        }
+        .icon-3 {
+            background-position: 0px -160px;
+        }
+        .icon-4 {
+            background-position: 0px -128px;
+        }
+        .icon-5 {
+            background-position: 0px -96px;
+        }
+        span {
+            color: #7B7B7B;
+            font-size: 0.7rem;
+        }
+    }
+    li.action {
+        i.icon-1 {
+            background-position: -32px -192px;
+        }
+        i.icon-2 {
+            background-position: -32px -32px;
+        }
+        i.icon-3 {
+            background-position: -32px -160px;
+        }
+        i.icon-4 {
+            background-position: -32px -128px;
+        }
+        i.icon-5 {
+            background-position: -32px -96px;
+        }
+        span {
+            color: #357BC0;
+            font-size: 0.7rem;
+        }
+    }
+    .list-nav {
+        display: none;
+        position: absolute;
+        bottom: 0px;
+        background-color: rgba($color: #eee, $alpha: 0.8);
+        margin-bottom: 66px;
+        z-index: 99999;
+        a {
+            display: block;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid #357BC0; // border-radius: 8px;
+            font-size: 0.7rem;
+            font-family: "PingFang SC";
+            font-weight: 400;
+            text-align: center;
+            color: #7B7B7B;
+            text-decoration: none;
+            z-index: 99999;
+        }
+        a:hover {
+            color: #357BC0;
+        }
+    }
+    .list-nav.action {
+        display: block;
+    }
+    .list-3 {
+        width: 20%;
+        right: 20%;
+    }
+    .list-4 {
+        width: 20%;
+        right: 0%;
+    }
+}
